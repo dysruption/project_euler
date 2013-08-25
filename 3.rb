@@ -1,6 +1,6 @@
 #dang, this is pretty slow...
 def largest_prime(n)
-  n.downto(1).detect {|x| prime?(x) and n % x == 0}
+  n.downto(1).detect {|x| n % x == 0 and prime?(x)}
 end
 
 def prime?(n)
@@ -13,7 +13,7 @@ def prime?(n)
   end
 end
 
-puts largest_prime(60081)
+puts largest_prime(600851475143)
 
 # The prime factors of 13195 are 5, 7, 13 and 29.
 
